@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EARTH-Home</title>
+</head>
+<body bgcolor="#11102f">
+    <div class="main">
+        <nav>
+            <img src="images/logo.png" height="100px" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="images/stars.png" id="stars">
+            <div class="info" id="text">
+                <h1>Welcome to the <br><span>EARTH</span></h1>
+                <P>The Earth is a sphere of miracles. It has lots of different landscapes.</P>
+            </div>
+            <div class="img-box" id="earth">
+                <div class="earth" ></div>
+            </div>
+        </section>
+    </div>
+    <div class="sec">
+        <h2>Planet Earth</h2>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Nobis facere consequuntur repellendus consequatur, <br>incidunt, nostrum, ipsum tempore quos aliquam sequi <br>voluptatum id voluptas cum fugiat iure optio dolores perferendis quam!</p>
+    </div>
+    <div class="footer">
+        <p>EARTH PVT LTD</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let text = document.getElementById('text');
+        let earth = document.getElementById('earth');
+        let para = document.getElementById('para');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            earth.style.top = value * 1 + 'px';
+            earth.style.top = value * 1.5 + 'px';
+            stars.style.top = value * 0.25 + 'px';
+            text.style.left = value * 1.40 + 'px';
+            
+        })
+    </script>
+</body>
+</html>
